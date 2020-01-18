@@ -13,7 +13,7 @@ for index, row in df.iterrows():
     if row['MedRecNo'] not in vocation_dict.keys():
         vocation_dict[row['MedRecNo']] = row['Work/Vocational_Details']
 
-# Create dataframes to return based on min datetime values found in dictionary
+# Create dataframes to return
 return_list = []
 
 for key in vocation_dict.keys():
